@@ -1,118 +1,394 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Renan Albuquerque Nunes | Portfólio</title>
-    <meta name="description" content="Portfólio de Renan Albuquerque Nunes - Desenvolvedor Full Stack. Veja experiências, formação, habilidades e formas de contato.">
-    <meta name="keywords" content="Renan Albuquerque Nunes, portfólio, desenvolvedor, full stack, ciência da computação, Vue.js, Quasar, GitHub, LinkedIn">
-    <meta name="author" content="Renan Albuquerque Nunes">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
+    <meta
+      name="description"
+      content="Portfólio de Renan Albuquerque Nunes - Desenvolvedor Full Stack. Veja experiências, formação, habilidades e formas de contato."
+    />
+    <meta
+      name="keywords"
+      content="Renan Albuquerque Nunes, portfólio, desenvolvedor, full stack, ciência da computação, Vue.js, Quasar, GitHub, LinkedIn"
+    />
+    <meta name="author" content="Renan Albuquerque Nunes" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-</head>
-<body>
+  </head>
+  <body>
     <div class="d-flex flex-column flex-md-row">
-        <!-- Sidebar -->
-        <div id="sidebar" class="d-flex flex-md-column align-items-center p-4">
-            <img src="img/foto.jpeg" alt="Renan Albuquerque Nunes" class="rounded-circle mb-3 profile-image" width="120">
-            <nav class="nav flex-md-column flex-row text-center">
-                <a class="nav-link active" href="#about">Sobre</a>
-                <a class="nav-link" href="#experience">Experiência</a>
-                <a class="nav-link" href="#education">Educação</a>
-                <a class="nav-link" href="#skills">Skills</a>
-                <a class="nav-link" href="#contact">Contato</a>
-            </nav>
-        </div>
+      <!-- Sidebar -->
+      <div id="sidebar" class="d-flex flex-md-column align-items-center p-4">
+        <img
+          src="img/foto.jpeg"
+          alt="Renan Albuquerque Nunes"
+          class="rounded-circle mb-3 profile-image"
+          width="120"
+        />
 
-        <!-- Main Content -->
-        <div class="content p-5" id="main-content">
-            <section id="about" class="content-section">
-                <h1 class="display-4 fw-bold">Renan <span class="text-primary">Albuquerque</span></h1>
-                <p class="lead">São Paulo, SP | (11) 95981-7322 | <a href="mailto:renanalnunes999@gmail.com" class="text-primary">renanalnunes999@gmail.com</a></p>
-                <p>Eu chamo Renan Albuquerque Nunes, tenho 20 anos e sou natural de São Paulo. Concluí o ensino médio na Etec, com o curso técnico em Meio Ambiente. Atualmente, estou cursando Ciência da Computação na UNIP.</p>
-                <div class="mb-4">
-                    <a href="https://www.linkedin.com/in/renan-albuquerque-nunes" target="_blank" rel="noopener" class="btn btn-outline-dark me-2">
-                        <i class="fab fa-linkedin me-1"></i>LinkedIn
-                    </a>
-                    <a href="https://github.com/RenanAlbuquerqueNunes" target="_blank" rel="noopener" class="btn btn-outline-dark me-2">
-                        <i class="fab fa-github me-1"></i>GitHub
-                    </a>
-                </div>
-            </section>
+        <nav class="nav flex-md-column flex-row text-center">
+          <a class="nav-link active" href="#about">
+            <i class="fas fa-user"></i> Sobre
+          </a>
+          <a class="nav-link" href="#experience">
+            <i class="fas fa-briefcase"></i> Experiência
+          </a>
+          <a class="nav-link" href="#education">
+            <i class="fas fa-graduation-cap"></i> Educação
+          </a>
+          <a class="nav-link" href="#skills">
+            <i class="fas fa-code"></i> Habilidades
+          </a>
+          <a class="nav-link" href="#projects">
+            <i class="fas fa-folder-open"></i> Projetos
+          </a>
+          <a class="nav-link" href="#contact">
+            <i class="fas fa-envelope"></i> Contato
+          </a>
+        </nav>
 
-            <section id="experience" class="content-section">
-                <h2 class="mb-3">Experiência</h2>
-                <div class="mb-3">
-                    <h5 class="mb-1">Desenvolvedor Full Stack Júnior</h5>
-                    <p class="mb-0"><strong>Empresa X</strong> — São Paulo, SP</p>
-                    <p class="text-muted">Jan 2024 - Presente</p>
-                    <ul>
-                        <li>Desenvolvimento de aplicações web com Vue.js e Quasar.</li>
-                        <li>Integração de APIs REST e manipulação de banco de dados.</li>
-                    </ul>
-                </div>
-                <div class="mb-3">
-                    <h5 class="mb-1">Estagiário em Suporte Técnico</h5>
-                    <p class="mb-0"><strong>Empresa Y</strong> — São Paulo, SP</p>
-                    <p class="text-muted">Ago 2022 - Dez 2023</p>
-                    <ul>
-                        <li>Atendimento e suporte a usuários internos.</li>
-                        <li>Manutenção preventiva e corretiva de equipamentos.</li>
-                    </ul>
-                </div>
-            </section>
+        <!-- Botão de alternar tema -->
+        <button id="theme-toggle" class="btn-toggle-theme mt-4">🌙</button>
+      </div>
 
-            <section id="education" class="content-section">
-                <h2 class="mb-3">Educação</h2>
-                <ul>
-                    <li>Técnico em Meio Ambiente – ETEC Paulistano</li>
-                    <li>Ciência da Computação – UNIP (em andamento)</li>
-                </ul>
-            </section>
+      <!-- Main Content -->
+      <div class="content p-5" id="main-content">
+        <section id="about" class="content-section">
+          <h1 class="display-4 fw-bold">
+            Renan <span class="text-primary">Albuquerque</span>
+          </h1>
+          <p class="lead">
+            <i class="fas fa-map-marker-alt text-danger me-1"></i> São Paulo, SP |
+            <a
+              href="mailto:renanalnunes999@gmail.com"
+              class="custom-link me-3"
+            >
+              <i class="fas fa-envelope"></i> renanalnunes999@gmail.com
+            </a>
+            |
+            <a
+              href="https://www.instagram.com/renanalbuquerquenunes"
+              target="_blank"
+              rel="noopener"
+              class="custom-link ms-3"
+            >
+              <i class="fab fa-instagram"></i> @renanalbuquerquenunes
+            </a>
+          </p>
+          
+          <p>
+            Eu chamo Renan Albuquerque Nunes, tenho 20 anos e sou natural de São
+            Paulo. Concluí o ensino médio na Etec, com o curso técnico em Meio
+            Ambiente. Atualmente, estou cursando Ciência da Computação na UNIP.
+          </p>
+          <div class="mb-4">
+            <a
+              href="https://www.linkedin.com/in/renan-albuquerque-nunes"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-social me-2"
+            >
+              <i class="fab fa-linkedin me-1"></i>LinkedIn
+            </a>
+            <a
+              href="https://github.com/RenanAlbuquerqueNunes"
+              target="_blank"
+              rel="noopener"
+              class="btn btn-social me-2"
+            >
+              <i class="fab fa-github me-1"></i>GitHub
+            </a>
+          </div>
+        </section>
 
-            <section id="skills" class="content-section">
-                <h2 class="mb-3">Skills</h2>
-                <div class="mb-3">
-                    <label class="form-label">HTML</label>
-                    <div class="progress">
-                        <div class="progress-bar bg-success" style="width: 90%">90%</div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">CSS</label>
-                    <div class="progress">
-                        <div class="progress-bar bg-info" style="width: 85%">85%</div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">JavaScript</label>
-                    <div class="progress">
-                        <div class="progress-bar bg-warning" style="width: 80%">80%</div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Vue.js / Quasar Framework</label>
-                    <div class="progress">
-                        <div class="progress-bar bg-primary" style="width: 75%">75%</div>
-                    </div>
-                </div>
-                <div class="mb-3">
-                    <label class="form-label">Git & GitHub</label>
-                    <div class="progress">
-                        <div class="progress-bar bg-dark" style="width: 80%">80%</div>
-                    </div>
-                </div>
-            </section>
+        <section id="experience" class="content-section">
+          <h2 class="mb-4">Experiência</h2>
 
-            <section id="contact" class="content-section">
-                <h2 class="mb-3">Contato</h2>
-                <p>Email: <a href="mailto:renanalnunes999@gmail.com">renanalnunes999@gmail.com</a></p>
-                <p>Telefone: (11) 95981-7322</p>
-            </section>
-        </div>
+          <div class="experience-card">
+            <h5>Assistente Comercial</h5>
+            <p class="company">Perri Engenharia e Construção — São Paulo, SP</p>
+            <p class="period">Out 2023 - Presente</p>
+            <ul>
+              <li>Vendas e atendimento telefônico (inclusive pós-venda).</li>
+              <li>Elaboração e acompanhamento de campanhas promocionais.</li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <h5>Auxiliar Administrativo</h5>
+            <p class="company">DJ Refrigeração — São Paulo, SP</p>
+            <p class="period">Mai 2022 - Out 2023</p>
+            <ul>
+              <li>
+                Digitalização, organização de arquivos e controle de estoque.
+              </li>
+              <li>
+                Atendimento ao cliente e acompanhamento de assistências
+                técnicas.
+              </li>
+            </ul>
+          </div>
+
+          <div class="experience-card">
+            <h5>Desenvolvedor Full Stack Júnior</h5>
+            <p class="company">Empresa X — São Paulo, SP</p>
+            <p class="period">Jan 2024 - Presente</p>
+            <ul>
+              <li>Desenvolvimento de aplicações web com Vue.js e Quasar.</li>
+              <li>Integração de APIs REST e manipulação de banco de dados.</li>
+            </ul>
+          </div>
+        </section>
+
+        <section id="education" class="education content-section">
+          <h2>Educação & Certificados</h2>
+          <div class="education-wrapper">
+            <div class="timeline">
+              <div class="timeline-item">
+                <div class="timeline-icon">🎓</div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2023 - 2027</span>
+                  <h3>Ciência da Computação</h3>
+                  <p><strong>UNIP - Marques</strong></p>
+                  <p><em>Cursando 5º semestre</em></p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon">🌍</div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2025</span>
+                  <h3>Inglês - Wise Up Online</h3>
+                  <p><em>Cursando 1º módulo</em></p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon">📜</div>
+                <div class="timeline-content">
+                  <span class="timeline-date">Concluído</span>
+                  <h3>Curso Técnico: Meio Ambiente</h3>
+                  <p><strong>ETEC Paulistano</strong></p>
+                  <p><em>Foco em práticas sustentáveis</em></p>
+                </div>
+              </div>
+              <div class="timeline-item">
+                <div class="timeline-icon">🏫</div>
+                <div class="timeline-content">
+                  <span class="timeline-date">2019 - 2022</span>
+                  <h3>Ensino Médio</h3>
+                  <p><strong>ETEC Paulistano</strong></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="certificados">
+              <div class="certificado-item">
+                <strong>Introdução ao Git e GitHub</strong><br />
+                <em>Digital Innovation One</em>
+              </div>
+              <div class="certificado-item">
+                <strong>JavaScript Essencial</strong><br />
+                <em>Fundação Bradesco</em>
+              </div>
+              <div class="certificado-item">
+                <strong>HTML e CSS para Iniciantes</strong><br />
+                <em>Curso em Vídeo</em>
+              </div>
+              <div class="certificado-item">
+                <strong>Python Básico</strong><br />
+                <em>Udemy</em>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="skills" class="content-section">
+          <h2 class="mb-3">Habilidades</h2>
+          <div class="skills-icons">
+            <i class="fab fa-html5" title="HTML"></i>
+            <i class="fab fa-css3-alt" title="CSS"></i>
+            <i class="fab fa-js" title="JavaScript"></i>
+            <i class="fab fa-react" title="React"></i>
+            <i class="fab fa-vuejs" title="Vue.js"></i>
+            <i class="fab fa-java" title="Java"></i>
+            <i class="fab fa-bootstrap" title="Bootstrap"></i>
+            <i class="fab fa-git-alt" title="Git"></i>
+            <i class="fab fa-python" title="Python"></i>
+            <i class="fas fa-database" title="PostgreSQL"></i>
+            <i class="fas fa-robot" title="Automação e IA"></i>
+          </div>
+
+          <h3 class="mt-4">Outras Qualificações</h3>
+          <ul class="qualificacoes-list">
+            <li>
+              <i class="fas fa-laptop"></i> Pacote Office, Power BI, navegação
+              web, e-mails corporativos
+            </li>
+            <li>
+              <i class="fas fa-code"></i> Criação de sites e landing pages
+            </li>
+            <li>
+              <i class="fas fa-robot"></i> Uso de ferramentas de IA e automação
+            </li>
+            <li>
+              <i class="fas fa-paint-brush"></i> Design, edição de imagens e
+              vídeos
+            </li>
+            <li>
+              <i class="fas fa-lightbulb"></i> Facilidade de aprendizado,
+              proatividade e comunicação
+            </li>
+          </ul>
+        </section>
+
+        <section id="projects" class="projects-section content-section">
+          <h2>Projetos</h2>
+          <div class="projects-grid">
+            <div class="project-card">
+              <h3><i class="fas fa-gamepad"></i> Jogo da Cobrinha</h3>
+              <p>
+                Jogo clássico da cobrinha desenvolvido em Java utilizando lógica
+                de programação e interface gráfica.
+              </p>
+              <div class="tech-icons">
+                <i class="fab fa-java" title="Java"></i>
+                <i class="fas fa-window-maximize" title="Swing"></i>
+              </div>
+              <a
+                href="https://github.com/renan/jogo-da-cobrinha"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver no GitHub
+              </a>
+            </div>
+
+            <div class="project-card">
+              <h3><i class="fas fa-calculator"></i> Calculadora em Python</h3>
+              <p>
+                Aplicação de calculadora simples com interface interativa,
+                desenvolvida em Python.
+              </p>
+              <div class="tech-icons">
+                <i class="fab fa-python" title="Python"></i>
+                <i class="fas fa-desktop" title="Tkinter"></i>
+              </div>
+              <a
+                href="https://github.com/renan/calculadora-python"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver no GitHub
+              </a>
+            </div>
+
+            <div class="project-card">
+              <h3><i class="fas fa-building"></i> Site Perri Construções</h3>
+              <p>
+                Website institucional responsivo para a empresa Perri
+                Construções, com layout moderno e informativo.
+              </p>
+              <div class="tech-icons">
+                <i class="fab fa-vuejs" title="Vue.js"></i>
+                <i class="fab fa-html5" title="HTML5"></i>
+                <i class="fab fa-css3-alt" title="CSS3"></i>
+              </div>
+              <a
+                href="https://github.com/renan/site-perri"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver no GitHub
+              </a>
+            </div>
+
+            <div class="project-card">
+              <h3><i class="fas fa-shopping-cart"></i> E-commerce de Peças</h3>
+              <p>
+                Loja virtual para venda de peças de máquinas de lavar e
+                refrigeração, com funcionalidades de carrinho e filtro.
+              </p>
+              <div class="tech-icons">
+                <i class="fab fa-vuejs" title="Vue.js"></i>
+                <i class="fas fa-layer-group" title="Quasar Framework"></i>
+                <i class="fas fa-database" title="PostgreSQL"></i>
+              </div>
+              <a
+                href="https://github.com/renan/ecommerce-pecas"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver no GitHub
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="contact" class="contact-section content-section">
+          <h2>Contato</h2>
+          <p>
+            Entre em contato comigo através das redes ou por e-mail. Estou
+            disponível para oportunidades, projetos e parcerias!
+          </p>
+
+          <div class="contact-icons">
+            <a href="mailto:renanalnunes999@email.com" title="E-mail">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <a
+              href="https://www.instagram.com/renanalbuquerquenunes"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="Instagram"
+            >
+              <i class="fab fa-instagram"></i>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/renan-albuquerque-nunes"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="LinkedIn"
+            >
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a
+              href="https://github.com/RenanAlbuquerqueNunes"
+              target="_blank"
+              rel="noopener noreferrer"
+              title="GitHub"
+            >
+              <i class="fab fa-github"></i>
+            </a>
+          </div>
+        </section>
+      </div>
     </div>
 
     <script src="js/scripts.js"></script>
-</body>
+    <script>
+      const toggleBtn = document.getElementById("theme-toggle");
+      const body = document.body;
+
+      // Carrega a preferência salva
+      if (localStorage.getItem("theme") === "dark") {
+        body.classList.add("dark-mode");
+        toggleBtn.textContent = "☀️";
+      }
+
+      toggleBtn.addEventListener("click", () => {
+        body.classList.toggle("dark-mode");
+        const isDark = body.classList.contains("dark-mode");
+        toggleBtn.textContent = isDark ? "☀️" : "🌙";
+        localStorage.setItem("theme", isDark ? "dark" : "light");
+      });
+    </script>
+  </body>
 </html>
