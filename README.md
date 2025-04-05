@@ -26,10 +26,6 @@ Este projeto está dividido nas seguintes seções:
 - `assets/`: Imagens e estilos
 - `router/`: Rotas da aplicação
 
-## 📸 Prévia
-
-![Preview do Portfólio](./preview.png) <!-- Adicione uma imagem real do portfólio aqui, se desejar -->
-
 ## 🧩 Funcionalidades
 
 - Exibição de projetos com cards responsivos
