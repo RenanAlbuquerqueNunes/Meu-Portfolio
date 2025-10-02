@@ -3,14 +3,7 @@
 <br>
 
 <p align="center">
-  <img src="preview.png" alt="Prévia do Portfólio" width="80%">
-</p>
-
-<p align="center">
-  <strong><a href="https://renanalbuquerquenunes.github.io/portfolio/">🔗 Acesse a Versão Ao Vivo</a></strong>
-</p>
-<p align="center">
-  <em>(Observação: Verifique se o link acima corresponde ao seu GitHub Pages)</em>
+  <strong><a href="[https://renanalbuquerquenunes.github.io/portfolio/](https://renanalbuquerquenunes.github.io/Meu-Portfolio/)">📃 Acesse a Versão Ao Vivo</a></strong>
 </p>
 
 ## 📝 Sobre o Projeto
