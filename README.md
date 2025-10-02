@@ -1,7 +1,7 @@
 # Portfólio Pessoal de Renan Albuquerque Nunes
 
-![GitHub last commit](https://img.shields.io/github/last-commit/RenanAlbuquerqueNunes/portfolio?style=for-the-badge&logo=github)
-![GitHub repo size](https://img.shields.io/github/repo-size/RenanAlbuquerqueNunes/portfolio?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/RenanAlbuquerqueNunes/meu-portfolio-web?style=for-the-badge&logo=github)
+![GitHub repo size](https://img.shields.io/github/repo-size/RenanAlbuquerqueNunes/meu-portfolio-web?style=for-the-badge)
 
 <br>
 
