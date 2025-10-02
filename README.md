@@ -3,7 +3,7 @@
 <br>
 
 <p align="center">
-  <strong><a href="[[https://renanalbuquerquenunes.github.io/portfolio/](https://renanalbuquerquenunes.github.io/Meu-Portfolio/)](https://renanalbuquerquenunes.github.io/Meu-Portfolio/)">📃 Acesse a Versão Ao Vivo</a></strong>
+  <strong><a href="https://renanalbuquerquenunes.github.io/Meu-Portfolio/">📃 Acesse a Versão Ao Vivo</a></strong>
 </p>
 
 ## 📝 Sobre o Projeto
